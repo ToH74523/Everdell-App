@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#2d5a27">
+    <meta name="description" content="Everdell Score Calculator - Punkte-Rechner für das Brettspiel Everdell">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+    
+    <title>Everdell Score</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">
+                    <span class="title-icon">🌲</span>
+                    Everdell Score
+                    <span class="title-icon">🌲</span>
+                </h1>
+                <p class="app-subtitle">Punkte-Rechner</p>
+            </div>
+        </header>
+
+        <!-- View 1: Setup -->
+        <main id="setup-view" class="view active">
+            <section class="setup-section">
+                <h2 class="section-header">
+                    <span class="header-decoration">🌿</span>
+                    Spielvorbereitung
+                    <span class="header-decoration">🌿</span>
+                </h2>
+                
+                <div class="player-count-section">
+                    <label for="player-count" class="label-large">Spieleranzahl:</label>
+                    <div class="player-count-selector">
+                        <button type="button" class="count-btn" id="count-decrease" aria-label="Spieler verringern">−</button>
+                        <span id="player-count-display" class="count-display">2</span>
+                        <button type="button" class="count-btn" id="count-increase" aria-label="Spieler erhöhen">+</button>
+                    </div>
+                </div>
+
+                <div class="players-setup" id="players-setup">
+                    <!-- Spieler-Namensfelder werden hier dynamisch eingefügt -->
+                </div>
+
+                <div class="expansions-section">
+                    <h3 class="subsection-header">Erweiterungen</h3>
+                    <div class="expansions-grid" id="expansions-grid">
+                        <!-- Erweiterungen werden hier dynamisch eingefügt -->
+                    </div>
+                </div>
+
+                <div class="setup-actions">
+                    <button type="button" class="btn-primary btn-large" id="start-game-btn">
+                        Spiel starten
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- View 2: Score-Eingabe -->
+        <main id="score-view" class="view hidden">
+            <section class="score-section">
+                <h2 class="section-header">
+                    <span class="header-decoration">🍂</span>
+                    Punkte eingeben
+                    <span class="header-decoration">🍂</span>
+                </h2>
+                
+                <div class="active-expansions" id="active-expansions">
+                    <!-- Aktive Erweiterungen werden hier angezeigt -->
+                </div>
+
+                <div class="players-grid" id="players-grid">
+                    <!-- Spieler-Karten werden hier dynamisch eingefügt -->
+                </div>
+
+                <div class="score-actions">
+                    <button type="button" class="btn-secondary" id="back-to-setup-btn">
+                        ← Zurück
+                    </button>
+                    <button type="button" class="btn-primary btn-large" id="calculate-winner-btn">
+                        Gewinner ermitteln
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- View 3: Ergebnisse -->
+        <main id="result-view" class="view hidden">
+            <section class="result-section">
+                <h2 class="section-header winner-header">
+                    <span class="header-decoration">🏆</span>
+                    Ergebnis
+                    <span class="header-decoration">🏆</span>
+                </h2>
+
+                <div class="winner-announcement" id="winner-announcement">
+                    <!-- Gewinner wird hier angezeigt -->
+                </div>
+
+                <div class="results-list" id="results-list">
+                    <!-- Rangliste wird hier angezeigt -->
+                </div>
+
+                <div class="result-actions">
+                    <button type="button" class="btn-secondary" id="back-to-score-btn">
+                        ← Punkte bearbeiten
+                    </button>
+                    <button type="button" class="btn-primary btn-large" id="new-game-btn">
+                        Neues Spiel
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="footer-text">Everdell Score Calculator</p>
+        </footer>
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

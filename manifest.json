@@ -1,0 +1,99 @@
+{
+    "name": "Everdell Score Calculator",
+    "short_name": "Everdell Score",
+    "description": "Punkte-Rechner für das Brettspiel Everdell - Einfache Auswertung aller Erweiterungen",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f7f3e9",
+    "theme_color": "#4a7c59",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "de-DE",
+    "categories": ["games", "utilities"],
+    "icons": [
+        {
+            "src": "icons/icon-72.png",
+            "sizes": "72x72",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-96.png",
+            "sizes": "96x96",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-152.png",
+            "sizes": "152x152",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-384.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "screenshots/setup.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "label": "Spielvorbereitung"
+        },
+        {
+            "src": "screenshots/score.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "label": "Punkte eingeben"
+        },
+        {
+            "src": "screenshots/results.png",
+            "sizes": "1080x1920",
+            "type": "image/png",
+            "label": "Ergebnis"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Neues Spiel starten",
+            "short_name": "Neues Spiel",
+            "description": "Startet ein neues Everdell-Spiel",
+            "url": "/?action=new",
+            "icons": [
+                {
+                    "src": "icons/icon-96.png",
+                    "sizes": "96x96"
+                }
+            ]
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false
+}
