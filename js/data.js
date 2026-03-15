@@ -48,7 +48,15 @@ const EVERDELL_DATA = {
         cardPoints: {
             id: 'cardPoints',
             label: 'Kartenpunkte',
-            description: 'Punkte von Kreaturen und Bauwerken',
+            description: 'Punkte auf Kreaturen und Bauwerken',
+            defaultValue: 0,
+            min: 0,
+            requires: null
+        },
+        pointMarkers: {
+            id: 'pointMarkers',
+            label: 'Punktemarker',
+            description: 'Gesammelte Punktemarker',
             defaultValue: 0,
             min: 0,
             requires: null
