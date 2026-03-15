@@ -53,47 +53,77 @@ const EVERDELL_DATA = {
             min: 0,
             requires: null
         },
-        basePoints: {
-            id: 'basePoints',
-            label: 'Basispunkte',
-            description: 'Punkte von Plättchen und anderen Quellen',
+        prosperityCards: {
+            id: 'prosperityCards',
+            label: 'Wohlstandskarten',
+            description: 'Punkte von Wohlstandskarten',
             defaultValue: 0,
             min: 0,
             requires: null
         },
-        bonusPoints: {
-            id: 'bonusPoints',
-            label: 'Bonuspunkte',
-            description: 'Punkte von Zielen und Ereignissen',
+        journey: {
+            id: 'journey',
+            label: 'Reise',
+            description: 'Erreichte Reisepunkte',
             defaultValue: 0,
             min: 0,
             requires: null
         },
-        coins: {
-            id: 'coins',
-            label: 'Münzen (÷3)',
-            description: 'Nur Pearlbrook: 3 Münzen = 1 Punkt',
+        events: {
+            id: 'events',
+            label: 'Ereignisse',
+            description: 'Abgeschlossene Ereignisse',
             defaultValue: 0,
             min: 0,
-            divisor: 3,
+            requires: null
+        },
+        festival: {
+            id: 'festival',
+            label: 'Fest',
+            description: 'Bellfaire: Festpunkte',
+            defaultValue: 0,
+            min: 0,
+            requires: 'bellfaire'
+        },
+        pearls: {
+            id: 'pearls',
+            label: 'Perlen',
+            description: 'Pearlbrook: Gesammelte Perlen',
+            defaultValue: 0,
+            min: 0,
             requires: 'pearlbrook'
         },
-        journeyPoints: {
-            id: 'journeyPoints',
-            label: 'Reisepunkte',
-            description: 'Punkte von Reise-Karten',
+        wonders: {
+            id: 'wonders',
+            label: 'Wunder',
+            description: 'Pearlbrook: Erbaute Wunder',
+            defaultValue: 0,
+            min: 0,
+            requires: 'pearlbrook'
+        },
+        adornments: {
+            id: 'adornments',
+            label: 'Schmuckstücke',
+            description: 'Pearlbrook: Gesammelte Schmuckstücke',
+            defaultValue: 0,
+            min: 0,
+            requires: 'pearlbrook'
+        },
+        discoveries: {
+            id: 'discoveries',
+            label: 'Entdeckungen',
+            description: 'Spirecrest: Entdeckungsplättchen',
             defaultValue: 0,
             min: 0,
             requires: 'spirecrest'
         },
-        deductions: {
-            id: 'deductions',
-            label: 'Abzüge',
-            description: 'Strafpunkte abziehen',
+        post: {
+            id: 'post',
+            label: 'Post',
+            description: 'Newleaf: Postkartenpunkte',
             defaultValue: 0,
             min: 0,
-            negative: true,
-            requires: null
+            requires: 'newleaf'
         }
     },
 
