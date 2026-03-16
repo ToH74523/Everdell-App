@@ -91,7 +91,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: rgba(247, 243, 233, 0.85);
+    background: rgba(247, 243, 233, 0.95);
 }
 
 /* ========================================
